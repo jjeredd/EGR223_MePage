@@ -1,0 +1,69 @@
+body{
+    background-color: white;
+}
+
+.title{
+    margin: auto;
+    color: solid black;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+nav ul{
+    background-color: ghostwhite;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+
+    /* Removes the bullets from the link */
+    list-style-type: none;
+
+    margin:0;
+    padding-top: 5px, 5px;
+}
+
+nav li{
+    float:left;
+}
+
+nav li a{
+    /* Moves the links downwards slightly */
+    display: block;
+
+    color: black;
+    text-align: center;
+
+    /* Spacing between the links*/
+    padding: 14px 16px;
+
+    /* Removes the underline effect from the links */
+    text-decoration: none;
+}
+
+nav li a:hover{
+    /* border-bottom: 2px lightsteelblue; */
+    text-decoration: underline;
+}
+
+nav li a.current-link{
+    border-bottom: 2px solid black;
+}
+
+.profile_picture{
+    width: 100px;
+    height: 100px;;
+    border-radius: 50%;
+}
+
+.splash_title_bold{
+    font-size: 3em;
+    color: black;
+}
+
+.splash_title_regular{
+    font-size: 2em;
+    color: grey;
+    font-weight: 300;
+}

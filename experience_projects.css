@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    font-family: Jost;
+    font-weight: 300;
+    font-size: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    /* 1st row will be fixed, 2nd and last rows will be resizable */
+    grid-template-rows: 50px 1fr 1fr 1fr;
+
+    gap: 10px;
+
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container div{
+    padding: 10px;
+}
+
+.nav_bar{
+    /* Spans the header across the entire top of the site */
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.nav_bar ul{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    background-color: ghostwhite;
+
+    /* Removes the bullets from the link */
+    list-style-type: none;
+
+    margin:0;
+    padding-top: 5px, 5px;
+}
+
+.nav_bar li{
+    float: left;
+}
+
+.nav_bar li a{
+    display: block;
+
+    color: black;
+    text-align: center;
+
+    /* Spacing between the links*/
+    padding: 14px 16px;
+
+    /* Removes the underline effect from the links */
+    text-decoration: none;
+}
+
+.nav_bar li a:hover{
+    text-decoration: underline;
+}
+
+.nav_bar li a.current-link{
+    border-bottom: 2px solid black;
+}
+
+.header{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    font-size: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_col{
+    grid-row-start: 3;
+    grid-row-end: span 4;
+
+    font-size: 40px;
+}
+
+.left_col_pic{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: span 4;
+    text-align: center;
+}
+
+.h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.h2{
+    font-size: 32px;
+    font-weight: lighter;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.p1{
+    font-size:26px;
+    text-align: left;   
+}

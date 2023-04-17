@@ -1,0 +1,76 @@
+header{
+    position: fixed;
+    z-index: 100%;
+
+}
+
+nav ul{
+    background-color: ghostwhite;
+}
+
+nav ul{
+    /*The following keeps the nav bar on top of the page */
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+
+    list-style-type: none;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    z-index: 100;
+
+    
+
+    /* Keeps the Nav Bar centered */
+    /*margin: auto;*/
+    display: flex;
+    justify-content: center;
+    /* height: 100%; */
+
+    /* border-bottom: solid; */
+}
+
+nav li{
+    /*display: inline;*/
+    float:left;
+}
+
+nav li a{
+    display: block;
+    color:Black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    /* position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+nav li a:hover {
+    background-color: white;
+}
+
+nav li a.current-link{
+    border-bottom: 2px solid black;
+}
+main{
+    /* padding-top: 40px; */
+    background-color: solid white;
+    text-align: center;
+}
+
+#container {
+    display: grid;
+    grid: repeat(2, 60px) / auto-flow 80px;
+}
+
+#container > div {
+    background-color: aquamarine;
+    width: 50px;
+    height: 50px;
+}
